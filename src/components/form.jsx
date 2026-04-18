@@ -26,7 +26,7 @@ function Form() {
       const res = await submitForm(state);
 
       console.log("SUCCESS:", res);
-      alert("We will contact you shortly!");
+       toast.success("Thank you connecting We will contact you shortly! 🎉"); 
 
       dispatch({ type: "RESET" });
     } catch (error) {

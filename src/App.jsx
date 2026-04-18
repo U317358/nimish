@@ -5,6 +5,7 @@ import Form from "./components/form";
 import Home from "./components/home";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import MainPage from "./components/mainpage";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/form" element={<Form />} />
         <Route path="/about" element={<About />} />
       </Routes>
+       <ToastContainer />
     </BrowserRouter>
   );
 }
